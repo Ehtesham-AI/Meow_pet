@@ -1,0 +1,217 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+:root {
+  /* Meow Pet Clinic - Off-White + Terracotta + Soft Cream */
+  --background: 48 100% 98%;
+  --foreground: 0 0% 15%;
+  --card: 48 100% 98%;
+  --card-foreground: 0 0% 15%;
+  --popover: 48 100% 98%;
+  --popover-foreground: 0 0% 15%;
+  --primary: 14 62% 48%;
+  --primary-foreground: 48 100% 98%;
+  --secondary: 48 85% 94%;
+  --secondary-foreground: 0 0% 15%;
+  --muted: 48 50% 93%;
+  --muted-foreground: 0 0% 45%;
+  --accent: 14 62% 48%;
+  --accent-foreground: 48 100% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 48 60% 92%;
+  --input: 48 100% 98%;
+  --ring: 14 62% 48%;
+  --radius: 0.75rem;
+  
+  /* Extended color palette */
+  --terracotta: 14 65% 48%;
+  --terracotta-light: 14 65% 65%;
+  --terracotta-dark: 14 65% 35%;
+  --cream: 48 85% 94%;
+  --warm-gray: 48 40% 80%;
+  --charcoal: 0 0% 15%;
+  
+  /* Shadow tokens */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.12);
+}
+
+.dark {
+  --background: 0 0% 12%;
+  --foreground: 48 100% 98%;
+  --card: 0 0% 12%;
+  --card-foreground: 48 100% 98%;
+  --popover: 0 0% 12%;
+  --popover-foreground: 48 100% 98%;
+  --primary: 14 62% 48%;
+  --primary-foreground: 48 100% 98%;
+  --secondary: 48 40% 25%;
+  --secondary-foreground: 48 100% 98%;
+  --muted: 0 0% 25%;
+  --muted-foreground: 0 0% 65%;
+  --accent: 14 62% 48%;
+  --accent-foreground: 48 100% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 20%;
+  --input: 0 0% 15%;
+  --ring: 14 62% 48%;
+}
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  
+  /* Extended colors */
+  --color-terracotta: hsl(var(--terracotta));
+  --color-terracotta-light: hsl(var(--terracotta-light));
+  --color-terracotta-dark: hsl(var(--terracotta-dark));
+  --color-cream: hsl(var(--cream));
+  --color-warm-gray: hsl(var(--warm-gray));
+  --color-charcoal: hsl(var(--charcoal));
+
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Typography base styles */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif font-semibold tracking-wide;
+    color: hsl(var(--charcoal));
+    letter-spacing: -0.02em;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl leading-tight;
+    font-weight: 700;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl leading-snug;
+    font-weight: 600;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+    font-weight: 600;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+    font-weight: 600;
+  }
+
+  h5 {
+    @apply text-lg md:text-xl;
+    font-weight: 600;
+  }
+
+  h6 {
+    @apply text-base md:text-lg;
+    font-weight: 600;
+  }
+
+  p {
+    @apply text-base leading-relaxed;
+    color: hsl(var(--charcoal));
+  }
+
+  a {
+    @apply text-primary hover:text-primary/80 transition-colors duration-300;
+    text-decoration: none;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+
+  /* Interactive elements */
+  button,
+  [role="button"] {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  button:hover,
+  [role="button"]:hover {
+    @apply transform -translate-y-px;
+  }
+
+  /* Input elements */
+  input,
+  textarea,
+  select {
+    @apply transition-all duration-300;
+    box-shadow: var(--shadow-sm);
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow: var(--shadow-md);
+    @apply ring-2 ring-primary/50;
+  }
+
+  /* Cards and containers */
+  [role="region"],
+  .card,
+  article {
+    @apply transition-all duration-300;
+    box-shadow: var(--shadow-md);
+  }
+
+  [role="region"]:hover,
+  .card:hover,
+  article:hover {
+    box-shadow: var(--shadow-lg);
+    @apply transform -translate-y-1;
+  }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
