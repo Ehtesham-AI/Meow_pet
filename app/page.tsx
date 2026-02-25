@@ -5,19 +5,19 @@ import Image from 'next/image';
 
 const teamMembers = [
   {
-    name: 'Dr. Sarah Anderson',
+    name: 'Dr. Arslan Ali',
     role: 'Lead Veterinarian',
     bio: 'Expert in pet care with 15+ years of experience',
     image: 'head.png',
   },
   {
-    name: 'Dr. Zulfi',
+    name: 'Dr. Muhammad Arslan Iqbal',
     role: 'Grooming Specialist',
     bio: 'Professional groomer specializing in exotic breeds',
     image: 'internee1.png',
   },
   {
-    name: 'Dr. Masair G',
+    name: 'Dr. Qazi Uzair',
     role: 'Pet Behaviorist',
     bio: 'Certified behavior consultant for all pet types',
     image: 'internee2.png',
