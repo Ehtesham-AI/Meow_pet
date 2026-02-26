@@ -50,7 +50,7 @@ export function Navigation() {
               alt="Meow Pet Clinic"
               width={56}
               height={56}
-              className="w-14 h-14"
+              className="w-20 h-20"
             />
             <span className="font-serif font-bold text-xl text-foreground hidden sm:inline">
               
