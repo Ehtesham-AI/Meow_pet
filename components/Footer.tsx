@@ -41,10 +41,9 @@ export function Footer() {
                 alt="Meow Pet Clinic"
                 width={44}
                 height={44}
-                className="w-11 h-11"
+                className="w-20 h-20"
               />
               <span className="font-serif font-bold text-foreground">
-                Meow Pet Clinic
               </span>
             </div>
             <p className="text-muted-foreground text-sm">
