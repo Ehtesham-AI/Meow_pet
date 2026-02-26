@@ -4,9 +4,10 @@ import Image from 'next/image';
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
-   const socialLinks = [
-    { href: 'https://www.facebook.com/1.DrArslanAli/', label: 'Facebook', icon: 'facebook' },
-    { href: 'https://www.instagram.com/meow_pet_hospital/?hl=en', label: 'Instagram', icon: 'instagram' },
+  const socialLinks = [
+    { href: 'https://facebook.com', label: 'Facebook', icon: 'facebook' },
+    { href: 'https://instagram.com', label: 'Instagram', icon: 'instagram' },
+    { href: 'https://twitter.com', label: 'Twitter', icon: 'twitter' },
   ];
 
   const renderSocialIcon = (icon: string) => {
@@ -22,6 +23,12 @@ export function Footer() {
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m5.894 17.789h-11.89V6.111h11.889v11.678z" />
             <path d="M12 6.5a5.5 5.5 0 110 11 5.5 5.5 0 010-11zm0 9a3.5 3.5 0 100-7 3.5 3.5 0 000 7z" />
+          </svg>
+        );
+      case 'twitter':
+        return (
+          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7s-1.08 2.04-3 3.5" />
           </svg>
         );
       default:
@@ -72,7 +79,7 @@ export function Footer() {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              {['Home', 'About', 'Services'].map((item) => (
+              {['Home', 'About', 'Services', 'Team'].map((item) => (
                 <li key={item}>
                   <Link
                     href={item === 'Home' ? '/' : `/${item.toLowerCase()}`}
@@ -112,9 +119,10 @@ export function Footer() {
               Contact
             </h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>0303 8015966</li>
+              <li>+923150509982</li>
               <li>aliarslan54890@gmail.com</li>
-              <li>J3RC+7PW, St 3, in front of Furqan Masjid, near Stone Oven Pizza Valley, D Block Block D Satellite Town, Rawalpindi</li>
+              <li>Infront of Furqan masjid, 6th Rd, near Stone Ove pizza valley, D Block Block D Satellite Town, Rawalpindi, Punjab, Pakistan, Rawalpindi, Pakistan
+              </li>
             </ul>
           </div>
         </div>
