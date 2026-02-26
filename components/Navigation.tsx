@@ -11,7 +11,6 @@ export function Navigation() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/services', label: 'Services' },
-    { href: '/team', label: 'Team' },
   ];
 
   const socialLinks = [
