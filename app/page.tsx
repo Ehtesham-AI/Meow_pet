@@ -12,7 +12,7 @@ const teamMembers = [
   },
   {
     name: 'Dr. Muhammad Arslan Iqbal',
-    role: 'Grooming Specialist',
+    role: 'Veterinary Surgeon and Groomer',
     bio: 'Professional groomer specializing in exotic breeds',
     image: 'internee1.png',
   },
@@ -23,11 +23,24 @@ const teamMembers = [
     image: 'internee2.png',
   },
   {
-    name: 'Dr. unknown',
-    role: 'Wellness Coordinator',
-    bio: 'Specialist in preventative pet health care',
+    name: 'Dr. Amna Zahid',
+    role: 'Veterinary physician and Surgeon',
+    bio: 'Veterinary physician surgeon and consultant for pet wellness',
     image: 'internee3.png',
   },
+  {
+    name: 'Dr. Aqsa Saeed Qureshi',
+    role: 'Veterinary physician and Surgeon',
+    bio: 'Veterinary physician surgeon and consultant for pet wellness',
+    image: 'internee4.png',
+  },
+  {
+    name: 'Dr. Muqadas',
+    role: 'Veterinary physician and Surgeon',
+    bio: 'Veterinary physician surgeon and consultant for pet wellness',
+    image: 'internee5.png',
+  },
+
 ];
 
 export default function Home() {
@@ -215,7 +228,7 @@ export default function Home() {
                   </div>
                   <div className="relative h-96 rounded-xl overflow-hidden">
                     <Image
-                      src="head2.png"
+                      src="dr_arslan_head.png"
                       alt="Pet care services"
                       fill
                       className="object-cover"
