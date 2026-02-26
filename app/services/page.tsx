@@ -276,8 +276,8 @@ export default function Services() {
           <p className="text-lg mb-8">
             Contact us today to book your pet's appointment.
           </p>
-          <CTAButton href="tel:5551234567" variant="secondary">
-            Call (555) 123-4567
+          <CTAButton href="tel:03038015966" variant="secondary">
+            Call 0303 8015966
           </CTAButton>
         </div>
       </section>

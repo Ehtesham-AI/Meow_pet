@@ -5,14 +5,14 @@ import Image from 'next/image';
 
 const teamMembers = [
   {
-    name: 'Dr. Arslan Ali',
+    name: 'Dr. Muhammad Arslan Bhatti',
     role: 'Lead Veterinarian',
-    bio: 'Expert in pet care with 15+ years of experience',
+    bio: 'Expert in pet care with 10+ years of experience',
     image: 'head.png',
   },
   {
     name: 'Dr. Muhammad Arslan Iqbal',
-    role: 'Veterinary Surgeon and Groomer',
+    role: 'Veterinary Surgeon and Physician',
     bio: 'Professional groomer specializing in exotic breeds',
     image: 'internee1.png',
   },
@@ -214,12 +214,15 @@ export default function Home() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
                   <div className="bg-background rounded-xl p-8 border border-border">
                     <h3 className="font-serif text-2xl font-bold text-foreground mb-2">
-                      Dr. Arslan Ali
+                      Dr. Muhammad Arslan Bhatti
                     </h3>
                     <p className="text-primary font-medium mb-4">Lead Veterinarian</p>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      Dr. Arslan Ali is the heart of Meow Pet Clinic. With over a decade of veterinary experience and a genuine love for animals, he leads our medical team with expertise and compassion.
+                      Dr. Muhammad Arslan Bhatti is a dedicated and compassionate veterinary professional serving as the Lead Veterinarian at Meow Pet Clinic. With extensive hands-on clinical experience, he is known for his accurate diagnosis, confident decision-making in emergencies, and deep commitment to animal welfare.
                     </p>
+                    <p className="text-muted-foreground mb-4 leading-relaxed">
+                      As a leader, Dr. Arslan not only focuses on treating patients but also on guiding his team with professionalism, discipline, and empathy. His approach combines modern veterinary practices with genuine care, ensuring that every pet receives thorough medical attention and every pet owner feels heard and supported.
+                     </p>
                     <ul className="space-y-2 text-muted-foreground text-sm">
                       <li>• DVM from PMAS AAUR</li>
                       <li>• Board Certified in Small Animal Medicine</li>
