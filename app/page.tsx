@@ -13,7 +13,7 @@ const teamMembers = [
   {
     name: 'Dr. Muhammad Arslan Iqbal',
     role: 'Veterinary Surgeon and Physician',
-    bio: 'Professional groomer specializing in exotic breeds',
+    bio: 'Veterinary physician surgeon and consultant for pet wellness',
     image: 'internee1.png',
   },
   {
